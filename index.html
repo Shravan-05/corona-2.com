@@ -1,0 +1,471 @@
+<html>
+
+<head>
+    <title>
+        DR.CORONA
+    </title>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            width: 100%;
+            height: 80px;
+            background-color: rgb(217, 147, 225);
+        }
+
+        nav ul {
+            float: right;
+            display: flex;
+            line-height: 80px;
+            list-style: none;
+
+        }
+
+        nav ul li {
+            margin: 0 30px;
+            font-size: 20px;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(123, 10, 10);
+            text-transform: uppercase;
+        }
+
+        #sy {
+            margin: 0 30px;
+            border-radius: 50px;
+        }
+
+        #menu {
+            width: 5%;
+            float: right;
+            display: block;
+            margin: 1rem 3rem;
+        }
+
+        #menu {
+            display: none;
+        }
+
+        @media screen and (max-width:1000px) {
+            ul {
+                background-color: blueviolet;
+                width: 100%;
+                height: 100vh;
+                position: fixed;
+                top: 100px;
+                left: -100%;
+                display: flex;
+                text-align: center;
+                flex-direction: column;
+                transition: all 3s ease;
+            }
+
+            a {
+                color: white;
+                text-transform: uppercase;
+            }
+
+            #menu {
+                display: block;
+            }
+
+            .container-2 {
+                margin-top: 5rem;
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+        }
+
+        #check:checked~ul {
+            left: 0%;
+        }
+
+        #check {
+            display: none;
+        }
+
+        .img {
+            width: 100%;
+
+        }
+
+        #img {
+            width: 20%;
+            display: block;
+            margin: 5rem 10rem;
+            animation-name: color1;
+            
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        #i2 {
+            width: 20%;
+
+            animation-name: color;
+            animation-duration: 0.9s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes color {
+            0% {
+                transform: 0;
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        #p1 {
+            font-size: 2rem;
+            width: 20%;
+            float: right;
+            margin: -12rem 20rem;
+            line-height: 40px;
+        }
+
+        @keyframes color1 {
+            0% {
+                transform: 0;
+            }
+
+            100% {
+                transform: scale(0.7);
+            }
+        }
+
+        #header {
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        .container {
+            display: block;
+            margin-top: 5rem;
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 3rem;
+        }
+
+        #nms {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 2rem;
+        }
+
+        h2 {
+            margin-top: 3rem;
+            text-align: center;
+            word-break: 2rem;
+        }
+
+        #inf {
+            width: 20%;
+
+        }
+
+        #info {
+            margin: 5rem 0;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #st {
+            height: 20%;
+            width: 30%;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #hh {
+            width: 20%;
+            border-radius: 200px;
+        }
+
+        .container-2 {
+            margin-top: 5rem;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .container-2 p {
+            width: 30%;
+        }
+
+        #section-2 {
+            width: 100%;
+        }
+
+        #f1 {
+            margin-top: 5rem;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        h1 {
+            margin-top: 5rem;
+        }
+
+        #cc {
+            width: 10%;
+
+        }
+
+        #count {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        #count1 {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-top: 5rem;
+        }
+
+        #text {
+            display: flex;
+            font-size: 2rem;
+            justify-content: space-evenly;
+        }
+
+        #ff {
+            display: flex;
+            flex-direction: row;
+            border: 1px solid black;
+            margin-top: 4rem;
+            width: 50%;
+            display: block;
+            margin: 4rem auto;
+        }
+
+        input {
+            display: block;
+            margin: 0 auto;
+            width: 300px;
+            padding: 10px;
+            margin-top: 2rem;
+        }
+
+        #uu {
+            margin-top: 2rem;
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        #nu {
+            display: inline-block;
+            margin: 2rem -5rem;
+            font-size: 2rem;
+        }
+
+        #p3 {
+            text-align: center;
+            margin-top: 5rem;
+            font-size: 2rem;
+        }
+
+        textarea {
+            padding-left: 500px;
+            overflow-x: hidden;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            background-color: blueviolet;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check"> <img src="https://www.shareicon.net/data/512x512/2015/12/09/684999_button_512x512.png"
+                id="menu"></label>
+        <img src="https://www.ovpm.org/wp-content/uploads/2020/03/chla-what-you-should-know-covid-19-1200x628-01.jpg"
+            height="80px" width="200px" id="sy">
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">symtoms</a></li>
+            <li><a href="#">info</a></li>
+            <li><a href="#">help</a></li>
+            <li><a href="#">corona</a></li>
+
+        </ul>
+    </nav>
+    <section>
+        <div class="img">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.YKqPAHKpbhtK1R0cPtrjYQHaFv&pid=Api&P=0" id="img">
+
+            <p id="p1">LET'S stay safe &fight together against co
+                <img src="https://tse1.mm.bing.net/th?id=OIP.yFFe_bmTvTpBk0aNOzmXrQHaEK&pid=Api&P=0" id="i2">rona
+            </p>
+        </div>
+
+    </section>
+    <section id="section-1">
+        <p id="header">corona updates</p>
+
+        <div class="container">
+            <p id="cou" class="cou1">0</p>
+            <p id="cou" class="cou2">0</p>
+            <p id="cou" class="cou3">0</p>
+        </div>
+        <div id="nms">
+            <p id="n1">corona patients</p>
+            <p id="n1">daeth people</p>
+            <p id="n1">recovered people</p>
+
+
+        </div>
+    </section>
+    <h2>CORONA INFORMATION</h2>
+    <section id="container1">
+        <div id="info">
+            <img src="https://ichef.bbci.co.uk/news/1024/branded_pidgin/50AE/production/_111245602_coronavirus.jpg"
+                id="inf">
+            <p id="st">Coronavirus disease (COVID-19) is an infectious disease caused by the SARS-CoV-2 virus.
+                Most people infected with the virus will experience mild to moderate respiratory illness and recover
+                without requiring special treatment. However, some will become seriously ill and require medical
+                attention. Older people and those with underlying medical conditions like cardiovascular disease,
+                diabetes, chronic respiratory disease, or cancer are more likely to develop serious illness. Anyone can
+                get sick with COVID-19 and become seriously ill or die at any age.</p>
+        </div>
+    </section>
+    <section id="section-2">
+        <h1>6 STEPS PREVENTION against CORONA<h1>
+                <div class="container-2">
+                    <img src="https://cdn3.vectorstock.com/i/1000x1000/73/17/washing-hand-using-hand-soap-sanitizer-cartoon-vector-30387317.jpg"
+                        id="hh">
+                    <p id="hh">you should wash hand daily with sanitizer after every 2hours to kill the coron from world
+                    </p>
+                    <img src="https://image.similarpng.com/very-thumbnail/2020/11/Cartoon-wearing-face-medical-mask-premium-vector-PNG.png"
+                        id="hh">
+                    <p id="hh">you should wash hand daily with sanitizer after every 2hours to kill the coron from world
+                    </p>
+                    <img src="https://media.istockphoto.com/vectors/social-distancing-poster-graphic-vector-id1213888287?k=6&m=1213888287&s=170667a&w=0&h=JaBMLu1ErTMXA3k8anajwf5tEn2_6ByfoED-nFlcy70="
+                        id="hh">
+                    <p id="hh">you should wash hand daily with sanitizer after every 2hours to kill the coron from world
+                    </p>
+
+                </div>
+                <div id="f1">
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.5H_SZ_EGlIzmCz_Jz860DQHaHa&pid=Api&P=0" id="hh">
+                    <p id="hh">you should wash hand daily with sanitizer after every 2hours to kill the coron from world
+                    </p>
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.0YG_yuUHKvg3YGZ2RNOWKQHaHa&pid=Api&P=0" id="hh">
+                    <p id="hh">you should wash hand daily with sanitizer after every 2hours to kill the coron from world
+                    </p>
+                    <img src="https://media.istockphoto.com/vectors/senior-citizen-with-difficulty-breathing-vector-id1030796100"
+                        id="hh">
+                    <p id="hh">you should wash hand daily with sanitizer after every 2hours to kill the coron from world
+                    </p>
+
+                </div>
+    </section>
+    <h1>corona virus symtoms</h1>
+    <section>
+        <div id="count">
+            <img src="https://media.istockphoto.com/vectors/boy-cartoon-coughing-for-you-design-vector-id616889898?k=6&m=616889898&s=612x612&w=0&h=r-wlS__BXa3M_wBaktDGlDEYyXSG4lUvlK3iEcVnj3E="
+                id="cc">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.3r_1LDuCByTb5gnZSns7GAHaKX&pid=Api&P=0" id="cc">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.RsAQhaPRw5uRSYgL8OwCYgHaHa&pid=Api&P=0" id="cc">
+        </div>
+        <div id="text">
+            <p id="t1">cough</p>
+            <p id="t1">runny nose</p>
+            <p id="t1">fever</p>
+        </div>
+        <div id="count1">
+            <img src="https://hhp-blog.s3.amazonaws.com/2017/04/iStock-507532152.jpg" id="cc">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.j_5NiMxI3yTgoQQ-hKt_TwHaIk&pid=Api&P=0" id="cc">
+            <img src="https://thumbs.dreamstime.com/b/bay-having-difficulty-breathing-flat-design-icon-vector-illustration-isolated-white-background-colorful-129278602.jpg"
+                id="cc">
+        </div>
+        <div id="text">
+            <p id="t1">tiredness</p>
+            <p id="t1">cold</p>
+            <p id="t1">breathing difficulty</p>
+        </div>
+        <h1>contact us ASAP</h1>
+    </section>
+    <section id="ff">
+        <div id="form">
+            <p id="uu">USERNAME</p>
+            <input type="text">
+            <p id="uu">email address</p>
+            <input type="email">
+            <p id="uu">mobile</p>
+            <input typ="number">
+            <p id="p3">select above symtoms</p>
+            <input type="checkbox" id="nu">cold
+            <input type="checkbox" id="nu">fever
+            <input type="checkbox" id="nu">weakness
+            <input type="checkbox" id="nu">cough
+
+            <h1>describe how you are feeling</h1>
+            <textarea>take care.....</textarea>
+            <img src="https://media.istockphoto.com/vectors/male-doctor-wearing-a-green-scrub-explains-the-medicine-vector-id898366944?k=6&m=898366944&s=170667a&w=0&h=UcvXuZf81N34Xeyt7PCw_a05hQ1KSKdg-2cDBidOZmQ="
+                id="gg">
+        </div>
+    </section>
+    <button>submit</button>
+    <script>
+
+        var project = setInterval(projectDone, -5.0)
+        var client = setInterval(student, 0.5)
+        var YOUTUBE = setInterval(male, 0.5)
+
+        let cou = 1;
+        function projectDone() {
+            cou++;
+            document.querySelector('.cou1').innerHTML = cou;
+
+            if (cou == 6000) {
+                clearInterval(project);
+            }
+        }
+        let pt= 1;
+        function student() {
+            pt++;
+            document.querySelector('.cou2').innerHTML = pt;
+
+            if (cou == 2000) {
+                clearInterval(client);
+            }
+        }
+        let dt = 1;
+        function male() {
+            dt++;
+            document.querySelector('.cou3').innerHTML = dt;
+
+            if (dt == 1000) {
+                clearInterval(YOUTUBE);
+            }
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
