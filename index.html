@@ -292,10 +292,23 @@
             background-color: blueviolet;
             padding: 15px;
         }
+         #preloader
+        {
+            background-color: black;
+            height: 100vh;
+            width:100%;
+            position:fixed;
+            z-index: 100000;
+            background-image: url(https://miro.medium.com/max/1400/1*e_Loq49BI4WmN7o9ItTADg.gif);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 15%;
+        }
     </style>
 </head>
 
 <body>
+    <div id="preloader"></div>
     <nav>
         <input type="checkbox" id="check">
         <label for="check"> <img src="https://www.shareicon.net/data/512x512/2015/12/09/684999_button_512x512.png"
@@ -465,7 +478,13 @@
 
 
     </script>
-
+<script>
+    var loader=document.getElementById("preloader");
+    window.addEventListener("load",function()
+    {
+        loader.style.display="none";
+    })
+</script>
 </body>
 
 </html>
